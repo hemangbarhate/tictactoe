@@ -13,7 +13,7 @@ class SocketClient {
   }
 
   static SocketClient get instance {
-    _instance ??= SocketClient._internal();
+    _instance = SocketClient._internal();
     return _instance!;
   }
 }

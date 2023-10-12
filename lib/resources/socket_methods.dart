@@ -5,7 +5,6 @@ class SocketMethods {
 
   void createRoom(String nickname) {
     if (nickname.isNotEmpty) {
-      print(nickname);
       _socketClient.emit('createRoom', {
         'nickname': nickname,
       });
